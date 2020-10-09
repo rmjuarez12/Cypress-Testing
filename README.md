@@ -52,7 +52,7 @@ Set up tests that will...
 
 ### Task 3: Stretch Goals
 
-If you have time, write and run different tests based on common issues you have encountered working on this code for the past few days.
+- [x] If you have time, write and run different tests based on common issues you have encountered working on this code for the past few days.
 
 ## FAQs
 
