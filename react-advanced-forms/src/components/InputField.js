@@ -11,6 +11,7 @@ export default function InputField(props) {
             id={props.name}
             onChange={props.handleChange}
             checked={props.value}
+            data-cy={props.name}
           />
           {props.label}
 
@@ -28,6 +29,7 @@ export default function InputField(props) {
             id={props.name}
             onChange={props.handleChange}
             value={props.value}
+            data-cy={props.name}
           />
 
           {props.error !== "" && <span className="error-mssg">{props.error}</span>}

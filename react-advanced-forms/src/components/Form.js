@@ -161,7 +161,7 @@ export default function Form(props) {
         error={errors.terms}
       />
 
-      <button type="submit" disabled={disableSubmit}>
+      <button type="submit" disabled={disableSubmit} data-cy="submit">
         Submit
       </button>
     </form>
