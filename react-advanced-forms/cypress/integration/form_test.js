@@ -61,5 +61,15 @@ describe("Signup Form Tests", function () {
 
     // Check if the form properly submitted and returned a value output
     cy.get("pre").should("exist");
+
+    // Check if the form cleared
+    cy.get(".signup-form")
+      .children()
+      .should(($input) => {
+        const val = $input.val();
+
+        // Check to see if the value of the field is at least 1 character long
+        expect(val.length).to.be.lessThan(1);
+      });
   });
 });
